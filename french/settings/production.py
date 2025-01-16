@@ -13,7 +13,7 @@ DATABASES = {
     'default': dj_database_url.config(default=config('DATABASE_URL'))
 }
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='your-production-domain.com', cast=lambda v: [s.strip() for s in v.split(',')])
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='french-0wi9.onrender.com', cast=lambda v: [s.strip() for s in v.split(',')])
 
 # Static files configuration for production
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
