@@ -10,7 +10,10 @@ SECRET_KEY = config('SECRET_KEY')  # Never hardcode sensitive data
 
 # Use PostgreSQL in production
 DATABASES = {
-    'default': dj_database_url.config(default=config('DATABASE_URL'))
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='french-0wi9.onrender.com', cast=lambda v: [s.strip() for s in v.split(',')])
