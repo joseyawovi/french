@@ -16,7 +16,7 @@ DATABASES = {
     }
 }
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS','*')
+ALLOWED_HOSTS = ['*']
 
 # Static files configuration for production
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
