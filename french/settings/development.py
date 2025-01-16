@@ -4,7 +4,7 @@ from .base import *
 DEBUG = True
 
 # Allow localhost and any local IP address to access your app
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1','french-0wi9.onrender.com']
 
 # Database settings for development (SQLite)
 DATABASES = {
