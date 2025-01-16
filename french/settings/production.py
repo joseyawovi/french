@@ -16,7 +16,7 @@ DATABASES = {
     }
 }
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='french-0wi9.onrender.com', cast=lambda v: [s.strip() for s in v.split(',')])
+ALLOWED_HOSTS = config('ALLOWED_HOSTS')
 
 # Static files configuration for production
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
