@@ -6,10 +6,7 @@ import sys
 def main():
     """Run administrative tasks."""
     # Check the environment variable and set the appropriate settings module
-    environment = os.getenv('DJANGO_ENV', 'development')  # Default to 'development' if not set
-    settings_module = f'french.settings.{environment}'
-
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', settings_module)
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'french.settings')
 
     try:
         from django.core.management import execute_from_command_line
@@ -23,3 +20,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+
